@@ -183,8 +183,8 @@ The following simplification rules are available:
         * ``x*(-y)`` → ``-(x*y)``
         * ``x+(y+z)`` → ``(x+y)+z`` (make sure sums calculated left-to-right)
         * ``x-(y+z)`` → ``(x-y)-z``
-        * ``x+(y-z) ``(x+y)-z'``
-        * ``x-(y-z)`` > ``(x-y)+z``
+        * ``x+(y-z)`` → ``(x+y)-z``
+        * ``x-(y-z)`` → ``(x-y)+z``
         * ``(x*y)*z`` → ``x*(y*z)`` (make sure multiplications go right-to-left)
         * ``n*i`` → ``eval(n*i)`` (always collect multiplication by :math:`i`)
         * ``i*n`` → ``eval(n*i)``
